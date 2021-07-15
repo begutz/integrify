@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import { Card } from "./components/Card";
 
 function App() {
   const [users, setUsers] = React.useState([]);
@@ -10,7 +11,13 @@ function App() {
       .then((data) => setUsers(data));
   }, []);
 
-  return <pre>{JSON.stringify(users, null, 2)}</pre>;
+  return (
+    <div>
+      <Card name={users[0]?.name}></Card>
+      <Card name={users[1]?.name}></Card>
+      <Card name={users[2]?.name}></Card>
+    </div>
+  );
 }
 
 export default App;
