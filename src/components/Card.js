@@ -1,7 +1,9 @@
-export function Card({ name, userName }) {
+export function Card({ name, userName, website }) {
   return (
     <div style={{ color: "red", font: "Helvetica" }}>
-      {name} @{userName}
+      <h1>{name}</h1>
+      <h2>@{userName}</h2>
+      <a href={website}>{website}</a>
     </div>
   );
 }
