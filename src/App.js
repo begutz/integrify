@@ -1,10 +1,15 @@
+import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
 
 function App() {
-  fetch("https://jsonplaceholder.typicode.com/users")
-    .then((response) => response.json())
-    .then((data) => console.log(data));
+  const [users, setUsers] = React.useState([]);
+
+  React.useEffect(() => {
+    fetch("https://jsonplaceholder.typicode.com/users")
+      .then((response) => response.json())
+      .then((data) => setUsers(data));
+  }, []);
 
   return (
     <div className="App">
@@ -13,6 +18,7 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
+        <pre>{JSON.stringify(users, null, 2)}</pre>
         <a
           className="App-link"
           href="https://reactjs.org"
