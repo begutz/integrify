@@ -1,7 +1,7 @@
-export function Card({ name, username }) {
+export function Card({ name, userName }) {
   return (
     <div style={{ color: "red", font: "Helvetica" }}>
-      {name} @{username}
+      {name} @{userName}
     </div>
   );
 }
