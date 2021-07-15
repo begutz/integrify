@@ -1,3 +1,7 @@
-export function Card({ name }) {
-  return <div style={{ color: "red", font: "Helvetica" }}>{name}</div>;
+export function Card({ name, username }) {
+  return (
+    <div style={{ color: "red", font: "Helvetica" }}>
+      {name} @{username}
+    </div>
+  );
 }
