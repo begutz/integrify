@@ -1,6 +1,9 @@
+import { ProfilePic } from "./ProfilePic";
+
 export function Card({ name, userName, website }) {
   return (
     <div style={{ color: "red", font: "Helvetica" }}>
+      <ProfilePic>{name}</ProfilePic>
       <h1>{name}</h1>
       <h2>@{userName}</h2>
       <a href={website}>{website}</a>
