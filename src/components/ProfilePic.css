@@ -1,9 +1,11 @@
 .ProfilePic {
-  color: blue;
   background-color: rgba(197, 194, 194, 0.973);
   border-radius: 50%;
   height: 75px;
   width: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .ProfilePic-letter {
   font-size: 2rem;
