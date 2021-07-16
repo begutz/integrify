@@ -14,7 +14,7 @@ function App() {
   users.map((user) => console.log(user));
 
   return (
-    <div>
+    <div className="App">
       {users.map((user) => (
         <Card
           name={user.name}
