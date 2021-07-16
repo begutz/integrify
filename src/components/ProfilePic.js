@@ -1,3 +1,5 @@
+import "./ProfilePic.css";
+
 export function ProfilePic({ children }) {
-  return <div>{children.charAt(0)}</div>;
+  return <div className="ProfilePic">{children.charAt(0)}</div>;
 }
