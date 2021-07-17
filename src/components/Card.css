@@ -5,3 +5,15 @@
   flex-direction: column;
   align-items: center;
 }
+
+.Card-name {
+}
+
+.Card-username {
+  margin-top: 0;
+  color: grey;
+}
+
+.Card-website {
+  margin-bottom: 1rem;
+}
