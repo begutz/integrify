@@ -1,3 +1,11 @@
 .Button {
-  background-color: steelblue;
+  background-color: rgb(107, 179, 238);
+  border: none;
+  color: white;
+  padding: 0.8rem 1.6rem;
+  border-radius: 12px;
+}
+
+.Button:hover {
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.3);
 }
