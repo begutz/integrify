@@ -1,5 +1,5 @@
 .Button {
-  background-color: rgb(107, 179, 238);
+  background-color: var(--main-color);
   border: none;
   color: white;
   padding: 0.8rem 1.6rem;

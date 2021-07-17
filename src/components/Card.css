@@ -16,4 +16,5 @@
 
 .Card-website {
   margin-bottom: 1rem;
+  color: var(--main-color);
 }
