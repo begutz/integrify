@@ -1,12 +1,13 @@
 import { ProfilePic } from "./ProfilePic";
 import { Button } from "./Button";
+import "./Card.css";
 
 export function Card({ name, userName, website }) {
   return (
-    <div>
+    <div className="Card">
       <ProfilePic>{name}</ProfilePic>
-      <h1>{name}</h1>
-      <h2>@{userName}</h2>
+      <h3>{name}</h3>
+      <h4>@{userName}</h4>
       <a href={website}>{website}</a>
       <Button>More Details</Button>
     </div>
