@@ -2,17 +2,10 @@ import React from "react";
 
 import "./Home.css";
 import { Card } from "../components/Card";
+import { useUsers } from "../hooks/useUsers";
 
 function Home() {
-  const [users, setUsers] = React.useState([]);
-
-  React.useEffect(() => {
-    fetch("https://jsonplaceholder.typicode.com/users")
-      .then((response) => response.json())
-      .then((data) => setUsers(data));
-  }, []);
-
-  users.map((user) => console.log(user));
+  const users = useUsers();
 
   return (
     <div className="Home">
