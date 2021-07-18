@@ -14,6 +14,7 @@ function Home() {
           name={user.name}
           userName={user.username}
           website={user.website}
+          userId={user.id}
         ></Card>
       ))}
     </div>
