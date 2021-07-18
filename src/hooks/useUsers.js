@@ -9,6 +9,5 @@ export function useUsers() {
       .then((data) => setUsers(data));
   }, []);
 
-  users.map((user) => console.log(user));
   return users;
 }

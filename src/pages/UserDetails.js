@@ -8,7 +8,6 @@ export function UserDetails() {
   if (!user) {
     return null;
   }
-  console.log(user);
   return (
     <div className="UserDetails">
       <ul>
