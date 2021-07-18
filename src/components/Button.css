@@ -4,6 +4,7 @@
   color: white;
   padding: 0.8rem 1.6rem;
   border-radius: 12px;
+  text-decoration: none;
 }
 
 .Button:hover {
