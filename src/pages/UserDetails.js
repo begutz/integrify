@@ -15,7 +15,7 @@ export function UserDetails() {
         <li>Name: {user.name}</li>
         <li>Username: {user.username}</li>
         <li>Email: {user.email}</li>
-        <li> Phone: {user.phone}</li>
+        <li>Phone: {user.phone}</li>
         <li>Company: {user.company.name}</li>
         <li>Website: {user.website}</li>
         <li>
