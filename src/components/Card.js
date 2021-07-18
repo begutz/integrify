@@ -2,7 +2,7 @@ import { ProfilePic } from "./ProfilePic";
 import { Button } from "./Button";
 import "./Card.css";
 
-export function Card({ name, userName, website }) {
+export function Card({ name, userName, website, userId }) {
   return (
     <div className="Card">
       <ProfilePic>{name}</ProfilePic>
@@ -11,7 +11,9 @@ export function Card({ name, userName, website }) {
       <a className="Card-website" href={website}>
         {website}
       </a>
-      <Button className="Card-button">More Details</Button>
+      <Button className="Card-button" to={`/user/${userId}`}>
+        More Details
+      </Button>
     </div>
   );
 }

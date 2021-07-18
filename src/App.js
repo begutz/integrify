@@ -1,29 +1,19 @@
-import React from "react";
-
-import "./App.css";
-import { Card } from "./components/Card";
+import Home from "./pages/Home";
+import UserDetails from "./pages/UserDetails";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
-  const [users, setUsers] = React.useState([]);
-
-  React.useEffect(() => {
-    fetch("https://jsonplaceholder.typicode.com/users")
-      .then((response) => response.json())
-      .then((data) => setUsers(data));
-  }, []);
-
-  users.map((user) => console.log(user));
-
   return (
-    <div className="App">
-      {users.map((user) => (
-        <Card
-          name={user.name}
-          userName={user.username}
-          website={user.website}
-        ></Card>
-      ))}
-    </div>
+    <Router>
+      <Switch>
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route exact path="/user/:id">
+          <UserDetails />
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 

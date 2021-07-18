@@ -1,0 +1,10 @@
+.UserDetails {
+  border: 1px solid black;
+  font-family: "Roboto", sans-serif;
+  margin: 1rem auto;
+  padding: 1rem;
+  max-width: 512px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
