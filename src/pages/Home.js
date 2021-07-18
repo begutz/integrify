@@ -11,6 +11,7 @@ function Home() {
     <div className="Home">
       {users.map((user) => (
         <Card
+          key={user.id}
           name={user.name}
           userName={user.username}
           website={user.website}
